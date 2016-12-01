@@ -1,0 +1,19 @@
+{
+  "name": "googlecse",
+  "version": "0.2.2",
+  "description": "Google Custom Search Engine (CSE)",
+  "author": "francis <francis@seisan.com>",
+  "main": "f/search/index.js",
+  "dependencies": {
+    "bluebird": "3.4.6",
+    "superagent": "3.1.0",
+    "superagent-bluebird-promise": "4.1.0"
+  },
+  "private": true,
+  "stdlib": {
+    "name": "francis/googlecse",
+    "defaultFunction": "search",
+    "timeout": 10000,
+    "publish": true
+  }
+}
