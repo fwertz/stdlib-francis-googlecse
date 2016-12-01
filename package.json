@@ -2,8 +2,23 @@
   "name": "googlecse",
   "version": "0.2.2",
   "description": "Google Custom Search Engine (CSE)",
+	"keywords": [
+		"stdlib",
+		"microservice",
+		"google",
+		"cse",
+		"custom",
+		"search"
+	],
+	"homepage": "http://fwertz.github.io/stdlib-francis-googlecse",
+	"bugs": "https://github.com/fwertz/stdlib-francis-googlecse",
   "author": "francis <francis@seisan.com>",
   "main": "f/search/index.js",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fwertz/stdlib-francis-googlecse"
+	",
   "dependencies": {
     "bluebird": "3.4.6",
     "superagent": "3.1.0",
