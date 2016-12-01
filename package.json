@@ -1,6 +1,6 @@
 {
   "name": "stdlib-googlecse",
-  "version": "0.2.3",
+  "version": "0.2.2",
   "description": "Google Custom Search Engine (CSE)",
 	"keywords": [
 		"stdlib",
