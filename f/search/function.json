@@ -10,7 +10,8 @@
 		"start": "1",
 		"fields":
 		"items(cacheId,displayLink,formattedUrl,htmlFormattedUrl,htmlSnippet,htmlTitle,image,link,pagemap,title),promotions",
-		"sites": ""
+		"sites": "",
+		"searchType": ""
   },
   "http": {
     "headers": {}
