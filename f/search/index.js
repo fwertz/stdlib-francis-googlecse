@@ -18,7 +18,7 @@ const request = require( 'superagent-bluebird-promise' );
 const API = 'https://www.googleapis.com/customsearch/v1';
 
 module.exports = (params, callback) => {
-	var {num, start, gl, cx, key, fields, sites } = params.kwargs;
+	var {q, num, start, gl, cx, key, fields, sites, searchType } = params.kwargs;
 
 	if ( sites ) {
 		sites = sites
@@ -26,11 +26,15 @@ module.exports = (params, callback) => {
 			.map( site => `site:${site}` )
 			.join( ' OR ' )
 			.trim();
-	} 
+	} else {
+		sites = '';
+	}
+
+	q = ( `${q} ${sites}` ).trim();
 
 	request
 		.get( API )
-		.query( {q: `${params.args[0]} ${sites}`, filter: 1, num, start, gl, cx, key, fields} )
+		.query( {filter: 1, q, num, start, gl, cx, key, fields, searchType} )
 		.then( response => {
 			callback( null, response.body );
 		})
